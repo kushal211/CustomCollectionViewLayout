@@ -246,9 +246,12 @@
 				TargetAttributes = {
 					8259A7DD1A3ED3A00027F925 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = S76F4E24H2;
+						LastSwiftMigration = 0820;
 					};
 					8259A7F21A3ED3A10027F925 = {
 						CreatedOnToolsVersion = 6.1.1;
+						LastSwiftMigration = 0820;
 						TestTargetID = 8259A7DD1A3ED3A00027F925;
 					};
 				};
@@ -419,10 +422,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S76F4E24H2;
 				INFOPLIST_FILE = CustomCollectionLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.uk.brightec.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -430,10 +435,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = S76F4E24H2;
 				INFOPLIST_FILE = CustomCollectionLayout/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.uk.brightec.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
@@ -453,6 +460,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.uk.brightec.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCollectionLayout.app/CustomCollectionLayout";
 			};
 			name = Debug;
@@ -469,6 +477,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "co.uk.brightec.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomCollectionLayout.app/CustomCollectionLayout";
 			};
 			name = Release;
