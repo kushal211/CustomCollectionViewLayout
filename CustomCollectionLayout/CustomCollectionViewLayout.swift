@@ -1,15 +1,15 @@
 //
-//  CustomCollectionViewLayout.swift
-//  CustomCollectionLayout
+// CustomCollectionViewLayout.swift
+// CustomCollectionLayout
 //
-//  Created by JOSE MARTINEZ on 15/12/2014.
-//  Copyright (c) 2014 brightec. All rights reserved.
+// Created by JOSE MARTINEZ on 15/12/2014.
+// Copyright (c) 2014 brightec. All rights reserved.
 //
 
 import UIKit
 
 class CustomCollectionViewLayout: UICollectionViewLayout {
-
+    
     let numberOfColumns = 8
     var itemAttributes : NSMutableArray!
     var itemsSize : NSMutableArray!
@@ -111,11 +111,10 @@ class CustomCollectionViewLayout: UICollectionViewLayout {
         return self.contentSize
     }
     
-    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes? {
-        let section = self.itemAttributes.object(at: indexPath.section) as! NSMutableArray
-        let row = section.object(at: indexPath.row) as! UICollectionViewLayoutAttributes
-        // return self.itemAttributes[indexPath.section][indexPath.row] as! UICollectionViewLayoutAttributes
-        return row
+    override func layoutAttributesForItem(at indexPath: IndexPath) -> UICollectionViewLayoutAttributes! {
+        //return self.itemAttributes[indexPath.section][indexPath.row] as! UICollectionViewLayoutAttributes
+        let arr = self.itemAttributes[indexPath.section] as! NSMutableArray
+        return arr[indexPath.row] as! UICollectionViewLayoutAttributes
     }
     
     override func layoutAttributesForElements(in rect: CGRect) -> [UICollectionViewLayoutAttributes]? {
@@ -123,12 +122,14 @@ class CustomCollectionViewLayout: UICollectionViewLayout {
         if self.itemAttributes != nil {
             for section in self.itemAttributes {
                 
-                let filteredArray = section.filtered(
+                let filteredArray  =  (section as! NSMutableArray).filtered(
                     
-                    using: NSPredicate(block: { (evaluatedObject, bindings) -> Bool in
-                        return rect.intersects(evaluatedObject.frame)
+                    using: NSPredicate(block: { (evaluatedObject , bindings) -> Bool in
+                        let a = evaluatedObject as! UICollectionViewLayoutAttributes
+                        return rect.intersects(a.frame)
                     })
-                ) as! [UICollectionViewLayoutAttributes]
+                    ) as! [UICollectionViewLayoutAttributes]
+                
                 
                 attributes.append(contentsOf: filteredArray)
                 
