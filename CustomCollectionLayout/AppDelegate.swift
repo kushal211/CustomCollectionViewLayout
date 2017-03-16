@@ -15,16 +15,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        
-        self.window = UIWindow(frame: UIScreen.main.bounds)
-        self.window!.backgroundColor = UIColor.white
-        
-        // Define root view controller
-        let mainController : CollectionViewController = CollectionViewController(nibName: "CollectionViewController", bundle: nil)
-        
-        self.window!.rootViewController = mainController
-        self.window!.makeKeyAndVisible()
-        
         return true
     }
 

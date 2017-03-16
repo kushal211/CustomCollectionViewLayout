@@ -7,17 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		23ADF66C1E7960FD00C908C7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 23ADF66B1E7960FD00C908C7 /* Main.storyboard */; };
 		8259A7E41A3ED3A00027F925 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259A7E31A3ED3A00027F925 /* AppDelegate.swift */; };
 		8259A7E61A3ED3A00027F925 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259A7E51A3ED3A00027F925 /* CollectionViewController.swift */; };
 		8259A7EB1A3ED3A00027F925 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8259A7EA1A3ED3A00027F925 /* Images.xcassets */; };
 		8259A7EE1A3ED3A10027F925 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8259A7EC1A3ED3A10027F925 /* LaunchScreen.xib */; };
 		8259A7FA1A3ED3A10027F925 /* CustomCollectionLayoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259A7F91A3ED3A10027F925 /* CustomCollectionLayoutTests.swift */; };
-		8259A8101A3ED55F0027F925 /* CollectionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8259A80F1A3ED55F0027F925 /* CollectionViewController.xib */; };
 		8259A8121A3ED5AC0027F925 /* CustomCollectionViewLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8259A8111A3ED5AC0027F925 /* CustomCollectionViewLayout.swift */; };
 		827A97181A603DD80055CFA1 /* DateCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A97161A603DD80055CFA1 /* DateCollectionViewCell.swift */; };
-		827A97191A603DD80055CFA1 /* DateCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827A97171A603DD80055CFA1 /* DateCollectionViewCell.xib */; };
 		827A971E1A603E600055CFA1 /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 827A971C1A603E600055CFA1 /* ContentCollectionViewCell.swift */; };
-		827A971F1A603E600055CFA1 /* ContentCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 827A971D1A603E600055CFA1 /* ContentCollectionViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,6 +29,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23ADF66B1E7960FD00C908C7 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = ../Main.storyboard; sourceTree = "<group>"; };
 		8259A7DE1A3ED3A00027F925 /* CustomCollectionLayout.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomCollectionLayout.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8259A7E21A3ED3A00027F925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8259A7E31A3ED3A00027F925 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -40,12 +39,9 @@
 		8259A7F31A3ED3A10027F925 /* CustomCollectionLayoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomCollectionLayoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8259A7F81A3ED3A10027F925 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8259A7F91A3ED3A10027F925 /* CustomCollectionLayoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionLayoutTests.swift; sourceTree = "<group>"; };
-		8259A80F1A3ED55F0027F925 /* CollectionViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewController.xib; sourceTree = "<group>"; };
 		8259A8111A3ED5AC0027F925 /* CustomCollectionViewLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewLayout.swift; sourceTree = "<group>"; };
 		827A97161A603DD80055CFA1 /* DateCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateCollectionViewCell.swift; sourceTree = "<group>"; };
-		827A97171A603DD80055CFA1 /* DateCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DateCollectionViewCell.xib; sourceTree = "<group>"; };
 		827A971C1A603E600055CFA1 /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
-		827A971D1A603E600055CFA1 /* ContentCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ContentCollectionViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +87,7 @@
 				8259A8031A3ED3A70027F925 /* Classes */,
 				8259A80E1A3ED5480027F925 /* Controllers */,
 				8259A7E31A3ED3A00027F925 /* AppDelegate.swift */,
+				23ADF66B1E7960FD00C908C7 /* Main.storyboard */,
 				8259A7EA1A3ED3A00027F925 /* Images.xcassets */,
 				8259A7EC1A3ED3A10027F925 /* LaunchScreen.xib */,
 				8259A7E11A3ED3A00027F925 /* Supporting Files */,
@@ -151,7 +148,6 @@
 			isa = PBXGroup;
 			children = (
 				8259A7E51A3ED3A00027F925 /* CollectionViewController.swift */,
-				8259A80F1A3ED55F0027F925 /* CollectionViewController.xib */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -169,7 +165,6 @@
 			isa = PBXGroup;
 			children = (
 				827A97161A603DD80055CFA1 /* DateCollectionViewCell.swift */,
-				827A97171A603DD80055CFA1 /* DateCollectionViewCell.xib */,
 			);
 			name = "Date Cell";
 			sourceTree = "<group>";
@@ -178,7 +173,6 @@
 			isa = PBXGroup;
 			children = (
 				827A971C1A603E600055CFA1 /* ContentCollectionViewCell.swift */,
-				827A971D1A603E600055CFA1 /* ContentCollectionViewCell.xib */,
 			);
 			name = "Content Cell";
 			sourceTree = "<group>";
@@ -268,11 +262,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				827A97191A603DD80055CFA1 /* DateCollectionViewCell.xib in Resources */,
 				8259A7EE1A3ED3A10027F925 /* LaunchScreen.xib in Resources */,
-				8259A8101A3ED55F0027F925 /* CollectionViewController.xib in Resources */,
-				827A971F1A603E600055CFA1 /* ContentCollectionViewCell.xib in Resources */,
 				8259A7EB1A3ED3A00027F925 /* Images.xcassets in Resources */,
+				23ADF66C1E7960FD00C908C7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,7 +358,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -405,7 +397,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";

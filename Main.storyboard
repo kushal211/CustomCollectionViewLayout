@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="sfa-t8-8QK">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Collection Layout | Brightec-->
+        <scene sceneID="2Sr-Kk-MCH">
+            <objects>
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="rgd-3M-7Vj" customClass="CollectionViewController" customModule="CustomCollectionLayout" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="dhU-8o-n8W"/>
+                        <viewControllerLayoutGuide type="bottom" id="kKC-Ao-kLk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="2M8-dy-34z">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wu8-LT-Cem">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <collectionViewLayout key="collectionViewLayout" id="QbQ-Xi-zbB" customClass="CustomCollectionViewLayout" customModule="CustomCollectionLayout" customModuleProvider="target"/>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="DateCellIdentifier" id="NX1-8A-XEf" customClass="DateCollectionViewCell" customModule="CustomCollectionLayout" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="92" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="92" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BSn-9Q-bH5">
+                                                    <rect key="frame" x="28" y="15" width="36" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="BSn-9Q-bH5" firstAttribute="centerX" secondItem="NX1-8A-XEf" secondAttribute="centerX" id="WfX-S7-a5L"/>
+                                            <constraint firstItem="BSn-9Q-bH5" firstAttribute="centerY" secondItem="NX1-8A-XEf" secondAttribute="centerY" id="p7Z-nC-Sj8"/>
+                                        </constraints>
+                                        <size key="customSize" width="92" height="50"/>
+                                        <connections>
+                                            <outlet property="dateLabel" destination="BSn-9Q-bH5" id="KEy-tl-hLD"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContentCellIdentifier" id="9Tx-Zd-p5y" customClass="ContentCollectionViewCell" customModule="CustomCollectionLayout" customModuleProvider="target">
+                                        <rect key="frame" x="102" y="0.0" width="99" height="50"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="99" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Content" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rIZ-yZ-bPe">
+                                                    <rect key="frame" x="18.5" y="15" width="62" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="rIZ-yZ-bPe" firstAttribute="centerY" secondItem="9Tx-Zd-p5y" secondAttribute="centerY" id="7Qz-aM-Qkg"/>
+                                            <constraint firstItem="rIZ-yZ-bPe" firstAttribute="centerX" secondItem="9Tx-Zd-p5y" secondAttribute="centerX" id="Jp2-Py-vNK"/>
+                                        </constraints>
+                                        <size key="customSize" width="99" height="50"/>
+                                        <connections>
+                                            <outlet property="contentLabel" destination="rIZ-yZ-bPe" id="m9f-sm-Izs"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="kKC-Ao-kLk" firstAttribute="top" secondItem="wu8-LT-Cem" secondAttribute="bottom" id="Gui-li-33p"/>
+                            <constraint firstItem="wu8-LT-Cem" firstAttribute="top" secondItem="dhU-8o-n8W" secondAttribute="bottom" id="f1x-y3-L34"/>
+                            <constraint firstItem="wu8-LT-Cem" firstAttribute="leading" secondItem="2M8-dy-34z" secondAttribute="leading" id="raj-M7-wqy"/>
+                            <constraint firstAttribute="trailing" secondItem="wu8-LT-Cem" secondAttribute="trailing" id="sKE-qB-9vK"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Custom Collection Layout | Brightec" id="mNl-dn-8cR"/>
+                    <connections>
+                        <outlet property="collectionView" destination="wu8-LT-Cem" id="A4c-sJ-Egt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xjl-jf-V93" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="46.326836581709152"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="k95-xw-LbN">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="sfa-t8-8QK" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="dFO-wU-PuN">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="barTintColor" red="0.49019607840000001" green="0.84313725490000002" blue="0.1529411765" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rgd-3M-7Vj" kind="relationship" relationship="rootViewController" id="KIU-i5-LcX"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x19-oO-iTf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="912.79999999999995" y="46.326836581709152"/>
+        </scene>
+    </scenes>
+</document>

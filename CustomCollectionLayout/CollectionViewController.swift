@@ -9,16 +9,18 @@
 import UIKit
 
 class CollectionViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
+    
+    // These two strings are the Identifiers set in the Storyboard
+    // for the DateCollectionViewCell and ContentCollectionViewCell
     let dateCellIdentifier = "DateCellIdentifier"
     let contentCellIdentifier = "ContentCellIdentifier"
-    @IBOutlet weak var collectionView: UICollectionView!
     
+    @IBOutlet weak var collectionView: UICollectionView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        self.collectionView .register(UINib(nibName: "DateCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: dateCellIdentifier)
-        self.collectionView .register(UINib(nibName: "ContentCollectionViewCell", bundle: nil), forCellWithReuseIdentifier: contentCellIdentifier)
+        self.collectionView.dataSource = self
+        self.collectionView.delegate = self
     }
     
     
@@ -30,14 +32,18 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        print("WE'RE IN: number of items ")
         return 8
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
+        print("WE'RE IN cellForItemAt")
+        // This is the first row
         if (indexPath as NSIndexPath).section == 0 {
             if (indexPath as NSIndexPath).row == 0 {
+                // This is the first cell of the first row. Label it.
                 let dateCell : DateCollectionViewCell = collectionView .dequeueReusableCell(withReuseIdentifier: dateCellIdentifier, for: indexPath) as! DateCollectionViewCell
                 dateCell.backgroundColor = UIColor.white
                 dateCell.dateLabel.font = UIFont.systemFont(ofSize: 13)
@@ -46,6 +52,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
                 
                 return dateCell
             } else {
+                // This is the rest of the first row.
                 let contentCell : ContentCollectionViewCell = collectionView .dequeueReusableCell(withReuseIdentifier: contentCellIdentifier, for: indexPath) as! ContentCollectionViewCell
                 contentCell.contentLabel.font = UIFont.systemFont(ofSize: 13)
                 contentCell.contentLabel.textColor = UIColor.black
@@ -60,7 +67,9 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
                 return contentCell
             }
         } else {
+            // These are the remaining rows
             if (indexPath as NSIndexPath).row == 0 {
+                // This is the first column of each row. Label it accordingly.
                 let dateCell : DateCollectionViewCell = collectionView .dequeueReusableCell(withReuseIdentifier: dateCellIdentifier, for: indexPath) as! DateCollectionViewCell
                 dateCell.dateLabel.font = UIFont.systemFont(ofSize: 13)
                 dateCell.dateLabel.textColor = UIColor.black
