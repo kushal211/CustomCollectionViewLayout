@@ -32,12 +32,15 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        /* Step 1 for a first row with twice the width:
         if section == 0 {
             // first row
             return 4
         } else {
             return 7
-        }
+        }*/
+        
+        return 8
     }
     
     

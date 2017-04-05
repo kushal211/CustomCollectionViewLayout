@@ -93,19 +93,20 @@ class CustomCollectionViewLayout: UICollectionViewLayout {
             for index in 0..<numberOfColumns {
                 // Note that at this point, itemsSize should be set. See ITEM SIZE comment above.
                 // Note that both x and y offsets are driven by the width and height of itemSize
-                var itemSize = self.itemsSize![index]
+                let itemSize = self.itemsSize![index]
                 let indexPath = IndexPath(item: index, section: section)
                 let attributes = UICollectionViewLayoutAttributes(forCellWith: indexPath)
                 
                 // This frame is the rectangular frame of the cell
+                /* // Part 2 of 2 for a first row with cells twice the width
                 if section == 0 && index > 0 {
-                    // Part 1 of 2
                     // Here is where I set the first row's cells with a width of *2.
                     itemSize = CGSize(width: itemSize.width*2, height: itemSize.height)
                     attributes.frame = CGRect(x: xOffset, y: yOffset, width: itemSize.width, height: itemSize.height).integral
                 } else {
                     attributes.frame = CGRect(x: xOffset, y: yOffset, width: itemSize.width, height: itemSize.height).integral
-                }
+                }*/
+                attributes.frame = CGRect(x: xOffset, y: yOffset, width: itemSize.width, height: itemSize.height).integral
                 
                 // print("Origin x, y: \(attributes.frame.origin.x) \(attributes.frame.origin.y)")
                 // print("Offset x, y: \(xOffset)  \(yOffset)")
@@ -230,7 +231,6 @@ class CustomCollectionViewLayout: UICollectionViewLayout {
         
         let size : CGSize = (text as NSString).size(attributes: [NSFontAttributeName: UIFont.systemFont(ofSize: 17.0)])
         let width : CGFloat = round(size.width + 25)
-        print("Layout sizeForItemWithColumnIndex WIDTH: \(width)")
         return CGSize(width: width, height: 30)
     }
     
