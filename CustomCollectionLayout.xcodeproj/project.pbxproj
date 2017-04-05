@@ -83,24 +83,17 @@
 		8259A7E01A3ED3A00027F925 /* CustomCollectionLayout */ = {
 			isa = PBXGroup;
 			children = (
-				827A97151A603DAB0055CFA1 /* Views */,
-				8259A8031A3ED3A70027F925 /* Classes */,
-				8259A80E1A3ED5480027F925 /* Controllers */,
+				8259A7E51A3ED3A00027F925 /* CollectionViewController.swift */,
+				8259A8111A3ED5AC0027F925 /* CustomCollectionViewLayout.swift */,
+				827A97161A603DD80055CFA1 /* DateCollectionViewCell.swift */,
+				827A971C1A603E600055CFA1 /* ContentCollectionViewCell.swift */,
 				8259A7E31A3ED3A00027F925 /* AppDelegate.swift */,
 				23ADF66B1E7960FD00C908C7 /* Main.storyboard */,
 				8259A7EA1A3ED3A00027F925 /* Images.xcassets */,
 				8259A7EC1A3ED3A10027F925 /* LaunchScreen.xib */,
-				8259A7E11A3ED3A00027F925 /* Supporting Files */,
-			);
-			path = CustomCollectionLayout;
-			sourceTree = "<group>";
-		};
-		8259A7E11A3ED3A00027F925 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
 				8259A7E21A3ED3A00027F925 /* Info.plist */,
 			);
-			name = "Supporting Files";
+			path = CustomCollectionLayout;
 			sourceTree = "<group>";
 		};
 		8259A7F61A3ED3A10027F925 /* CustomCollectionLayoutTests */ = {
@@ -118,63 +111,6 @@
 				8259A7F81A3ED3A10027F925 /* Info.plist */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		8259A8031A3ED3A70027F925 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				8259A8091A3ED47F0027F925 /* CustomCollectionViewLayout */,
-			);
-			name = Classes;
-			sourceTree = "<group>";
-		};
-		8259A8081A3ED46E0027F925 /* Swift */ = {
-			isa = PBXGroup;
-			children = (
-				8259A8111A3ED5AC0027F925 /* CustomCollectionViewLayout.swift */,
-			);
-			name = Swift;
-			sourceTree = "<group>";
-		};
-		8259A8091A3ED47F0027F925 /* CustomCollectionViewLayout */ = {
-			isa = PBXGroup;
-			children = (
-				8259A8081A3ED46E0027F925 /* Swift */,
-			);
-			name = CustomCollectionViewLayout;
-			sourceTree = "<group>";
-		};
-		8259A80E1A3ED5480027F925 /* Controllers */ = {
-			isa = PBXGroup;
-			children = (
-				8259A7E51A3ED3A00027F925 /* CollectionViewController.swift */,
-			);
-			name = Controllers;
-			sourceTree = "<group>";
-		};
-		827A97151A603DAB0055CFA1 /* Views */ = {
-			isa = PBXGroup;
-			children = (
-				827A971B1A603E470055CFA1 /* Content Cell */,
-				827A971A1A603E370055CFA1 /* Date Cell */,
-			);
-			name = Views;
-			sourceTree = "<group>";
-		};
-		827A971A1A603E370055CFA1 /* Date Cell */ = {
-			isa = PBXGroup;
-			children = (
-				827A97161A603DD80055CFA1 /* DateCollectionViewCell.swift */,
-			);
-			name = "Date Cell";
-			sourceTree = "<group>";
-		};
-		827A971B1A603E470055CFA1 /* Content Cell */ = {
-			isa = PBXGroup;
-			children = (
-				827A971C1A603E600055CFA1 /* ContentCollectionViewCell.swift */,
-			);
-			name = "Content Cell";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

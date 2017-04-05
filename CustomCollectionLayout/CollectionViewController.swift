@@ -32,14 +32,16 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
     
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        print("WE'RE IN: number of items ")
-        return 8
+        if section == 0 {
+            // first row
+            return 4
+        } else {
+            return 7
+        }
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        
-        print("WE'RE IN cellForItemAt")
         // This is the first row
         if (indexPath as NSIndexPath).section == 0 {
             if (indexPath as NSIndexPath).row == 0 {
@@ -82,6 +84,7 @@ class CollectionViewController: UIViewController, UICollectionViewDataSource, UI
                 
                 return dateCell
             } else {
+                // These are all the remaining content cells (neither first column nor first row)
                 let contentCell : ContentCollectionViewCell = collectionView .dequeueReusableCell(withReuseIdentifier: contentCellIdentifier, for: indexPath) as! ContentCollectionViewCell
                 contentCell.contentLabel.font = UIFont.systemFont(ofSize: 13)
                 contentCell.contentLabel.textColor = UIColor.black
